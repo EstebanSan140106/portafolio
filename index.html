@@ -1,63 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/estilos.css">
-    <link rel="stylesheet" href="estilos/main.css">
+    <link rel="stylesheet" href="estilos/min.css">
     <link rel="stylesheet" href="estilos/vendor.css">
-    <!-- Java Script  -->
-     <link rel="appele-touch-icon"  sizes="180x180" href="apple-touch-icon.png">
-     <link rel="image/png"  sizes="32x32" href="favicon-32x32.png">
-     <link rel="image/png"  sizes="16x16" href="favicon-16x16.png">
+    <link rel="stylesheet" href="estilos/font-awesome.css">
+<link rel="stylesheet" href="estilos/font-awesome/css/fontawesome-all.min.css">
+
+    <!-- java Script -->
+    <script src="js/modernzr.js"></script>
+    <script src="js/pace.min.js"></script>
+
+
+    <!-- Estilos icono de la pestaña-->
+    <link rel="appele-touch-icon" sizes="180x180" href="imagenes/apple-touch-icon.jpeg">
+    <link rel="icon" sizes="32x32" href="imagenes/favicon-32x32.jpeg">
+    <link rel="icon" sizes="16x16" href="imagenes/favicon-16x16.jpeg">
+
     <title>Portafolio</title>
 </head>
-<body id="top">
-<!-- vista de carga/loading -->
- <div id="preload">
-    <div id="loader"></div>
- </div>
- <!-- empezamos con el header -->
-  <header class="s-header">
-    <div class="header-logo">
-        <a href="index.html" class="site-logo">
-            <img src="imagenes/logo.svg" alt="HomePage">
-        </a>
-    </div>
-    <nav class="header-nav-wrap">
-        <ul class="header-main-nav">
-            <li> <a href="#intro" title ="Introducción" class="smoothscroll">About Us</a></li>
-            <li><a href="#about" title="About" class="smoothscroll">About Us</a></li>
-            <li> <a href="#services" title="Services" class="smoothscroll">Services</a></li>
-            <li><a href="#works" title="Works" class="smoothscroll">Works</a></li>
-            <li><a href="#contacts" title="Contacts us" class="smoothscroll">Contact Us</a></li>
-        </ul>
-        <ul class="header-social">
-            <li><a href="#0"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
-            <li><a href="#2"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
-            <li><a href="#3"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
-            <li><a href="#4"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
-        </ul>
-    </nav>
-    <a href="#" class="header-menu-toggle"><span>Menu</span></a>
 
-  </header>
-  <section id="intro" class="s-intro target-section">
-    <div class="row intro-content">
-        <div class="column large-9 mob-full intro-text">
-            <h3>Hola, mi nombre es Esteban Sánchez</h3>
-            <h1>
-                Estudio para desarrolladro de Software <br>
-                Me gusta jugar videojuegos <br>
-                M egusta la musica electrónica <br>
-            </h1>
-        </div>
-        <div class="intro-scroll">
-            <a href="#about" class="intro-scrol-link smoothscroll">
-                Press for More
+<body id="top">
+    <!-- vista de carga/loading -->
+    <div id="preload">
+        <div id="loader"></div>
+    </div>
+    <!-- empezamos con el header -->
+    <header class="s-header">
+        <div class="header-logo">
+            <a href="index.html" class="site-logo">
+                <img src="imagenes/logo.svg" alt="HomePage">
             </a>
         </div>
-    </div>
-  </section>
+        <nav class="header-nav-wrap">
+            <ul class="header-main-nav">
+                <li class="default"> <a href="#intro" title="Introducción" class="smoothscroll">Intro</a></li>
+                <li><a href="#about" title="About" class="smoothscroll">About Us</a></li>
+                <li> <a href="#services" title="Services" class="smoothscroll">Services</a></li>
+                <li><a href="#works" title="Works" class="smoothscroll">Works</a></li>
+                <li><a href="#contacts" title="Contacts us" class="smoothscroll">Contact Us</a></li>
+            </ul>
+            <ul class="header-social">
+                <li><a href="#0"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="#2"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#3"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href="#4"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
+            </ul>
+        </nav>
+        <a href="#" class="header-menu-toggle"><span>Menu</span></a>
+
+    </header>
+    <section id="intro" class="s-intro target-section">
+        <div class="row intro-content">
+            <div class="column large-9 mob-full intro-text">
+                <h3>Hola, mi nombre es Esteban Sánchez</h3>
+                <h1>
+                    Estudio para desarrolladro de Software <br>
+                    Me gusta jugar videojuegos <br>
+                    Me gusta la musica electrónica <br>
+                </h1>
+            </div>
+            <div class="intro-scroll">
+                <a href="#about" class="intro-scrol-link smoothscroll">
+                    Press for More
+                </a>
+            </div>
+        </div>
+        <section id="about" class="s-about target-section"></section>
+        <div id="about" class="s-about target-section">
+            <div class="about-me">
+                <div class="column large-full">
+                    <h2 class="secting-heading">About Me</h2>
+                </div>
+            </div>
+            <div class="row about-me__content">
+                <div class="column large-full about me__text">
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo perspiciatis similique neque
+                        vel? Nostrum maxime expedita magni sed ratione, alias fugit quisquam, et ut dignissimos
+                        aspernatur ab tempore, perspiciatis voluptatum!
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, repudiandae repellat, aut
+                        incidunt inventore dolorum nemo amet vel similique nostrum, praesentium saepe in nobis ab quidem
+                        architecto molestias. Earum, voluptates.
+
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime nemo repellat praesentium,
+                        architecto nisi assumenda vero et. Quis enim ratione, a, voluptas aliquam consectetur itaque,
+                        ipsa quaerat nostrum et id.
+                    </p>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint quasi maxime sunt expedita
+                        laboriosam fugit totam iusto, quidem, accusamus porro eos delectus consequuntur obcaecati alias
+                        natus facere hic, odio minima?
+                    </p>
+                </div>
+            </div>
+            <div class="row about-me__buttons">
+                <div class="column large-half tab-full">
+                    <a href="#" class="btn btn--stroke full-width">Hire Me</a>
+                </div>
+                <div class="column large-half ta-full">
+                    <a href="#" class="btn btn--stroke full width"> Download CV</a>
+                </div>
+            </div>
+        </div> <!--End About-->
+
+        <!-- Experience  -->
+        <div class="about-experience">
+            <div class="row heading-block">
+                <div class="column large-full">
+                    <h2 class="section-heading">Work & Education</h2>
+                </div>
+            </div>
+            <div class="row about-experience__timeline">
+                <div class="column large-half tab-full">
+                    <div class="timeline">
+                        <div class="timeline_icon-wrap">
+                            <span class="timeline_icon timeline_icon-work"></span>
+                        </div>
+                        <div class="timeline_block"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
 </body>
+
 </html>
