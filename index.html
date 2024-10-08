@@ -4,134 +4,343 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos/estilos.css">
-    <link rel="stylesheet" href="estilos/min.css">
+    <!--CSS-->
+    <link rel="stylesheet" href="estilos/base.css">
+    <link rel="stylesheet" href="estilos/main.css">
     <link rel="stylesheet" href="estilos/vendor.css">
-    <link rel="stylesheet" href="estilos/font-awesome.css">
-    <link rel="stylesheet" href="estilos/font-awesome/css/fontawesome-all.min.css">
-
-    <!-- java Script -->
-    <script src="js/modernzr.js"></script>
+    <link rel="stylesheet" href="estilos/font-awesome/css/fontawesome-all.css">
+    <!--JavaScript
+    ===================================================-->
+    <script src="js/modernizr.js"></script>
     <script src="js/pace.min.js"></script>
 
-
-    <!-- Estilos icono de la pestaña-->
-    <link rel="appele-touch-icon" sizes="180x180" href="imagenes/apple-touch-icon.jpeg">
-    <link rel="icon" sizes="32x32" href="imagenes/favicon-32x32.jpeg">
-    <link rel="icon" sizes="16x16" href="imagenes/favicon-16x16.jpeg">
-
+    <!--Favicon - icono de la pestaña
+    ===================================================-->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_portafolio_32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_protafolio16x16.png">
     <title>Portafolio</title>
 </head>
 
 <body id="top">
-    <!-- vista de carga/loading -->
-    <div id="preload">
+    <!--vista de carga o loading-->
+    <div id="preloader">
         <div id="loader"></div>
     </div>
-    <!-- empezamos con el header -->
+    <!--Empeazados con el header
+    ====================================================-->
     <header class="s-header">
         <div class="header-logo">
             <a href="index.html" class="site-logo">
-                <img src="imagenes/9e7cd54a-4c58-402f-b64a-77a638dedee3.webp" width="220px" height="220px" alt="HomePage">
+                <img src="img/logo.svg" alt="Homepage">
             </a>
         </div>
+        <!--Barra de Navegación 
+        =================================================-->
         <nav class="header-nav-wrap">
             <ul class="header-main-nav">
-                <li class="default"> <a href="#intro" title="Introducción" class="smoothscroll">Intro</a></li>
-                <li><a href="#about" title="About" class="smoothscroll">About Us</a></li>
-                <li> <a href="#services" title="Services" class="smoothscroll">Services</a></li>
-                <li><a href="#works" title="Works" class="smoothscroll">Works</a></li>
-                <li><a href="#contacts" title="Contacts us" class="smoothscroll">Contact Us</a></li>
+                <li class="current"><a href="#intro" class="smoothscroll" title="intro">Introducción</a></li>
+                <li><a href="#about" title="about" class="smoothscroll">About</a></li>
+                <li><a href="#services" title="services" class="smoothscroll">Services</a></li>
+                <li><a href="#works" title="works" class="smoothscroll">Works</a></li>
+                <li><a href="#contact" title="contact us" class="smoothscroll">Contact</a></li>
             </ul>
+
+            <!--Creamos una lista desordenada para las redes sociales
+            ======================================-->
             <ul class="header-social">
                 <li><a href="#0"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
-                <li><a href="#2"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#1"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#2"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
                 <li><a href="#3"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
-                <li><a href="#4"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
             </ul>
         </nav>
         <a href="#" class="header-menu-toggle"><span>Menu</span></a>
+    </header><!--fin del header-->
 
-    </header>
+    <!--INtroduccion
+    ===============================================-->
     <section id="intro" class="s-intro target-section">
         <div class="row intro-content">
             <div class="column large-9 mob-full intro-text">
-                <h3>Hola, mi nombre es Esteban Sánchez</h3>
+                <h3>Hola, Mi nombre es Elvis Pachacama</h3>
                 <h1>
-                    Estudio para desarrolladro de Software <br>
-                    Me gusta jugar videojuegos <br>
-                    Me gusta la musica electrónica <br>
+                    Desarrollador Web <br>
+                    Desarrolladores Móviles <br>
+                    Expertos en IA
                 </h1>
             </div>
             <div class="intro-scroll">
-                <a href="#about" class="intro-scrol-link smoothscroll">
-                    Press for More
+                <a href="#about" class="intro-scroll-link smoothscroll">
+                    Presiona para más
                 </a>
+
             </div>
-        </div>
-        <section id="about" class="s-about target-section"></section>
-        <div id="about" class="s-about target-section">
-            <div class="about-me">
+            <div class="intro-grid"></div>
+            <div class="intro-pic"></div>
+
+        </div><!--end row-->
+    </section><!--end intro-->
+
+    <!--about
+    ==========================================================-->
+    <section id="about" class="s-about target-section">
+        <div class="about-me">
+            <div class="row heading-block">
                 <div class="column large-full">
-                    <h2 class="secting-heading">About Me</h2>
+                    <h2 class="section-heading">About me</h2>
                 </div>
             </div>
             <div class="row about-me__content">
-                <div class="column large-full about me__text">
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo perspiciatis similique neque
-                        vel? Nostrum maxime expedita magni sed ratione, alias fugit quisquam, et ut dignissimos
-                        aspernatur ab tempore, perspiciatis voluptatum!
+                <div class="column large-full about-me__text">
+                    <p class="lead">
+                        Elvis Pachacama Cabezas es un educador y profesional con un título de tercer nivel en Ingeniería
+                        en Tecnologías de la Información,
+                        obtenido en la Universidad Estatal de Sumy en Ucrania (SUMDU) СУМДУ.
+                        Se destaca por su participación en la vida estudiantil,
+                        ya que fue representante de los estudiantes ecuatorianos
+                        en el Consejo Estudiantil de la universidad, lo que sugiere un
+                        compromiso activo con los asuntos estudiantiles.
                     </p>
+
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, repudiandae repellat, aut
-                        incidunt inventore dolorum nemo amet vel similique nostrum, praesentium saepe in nobis ab quidem
-                        architecto molestias. Earum, voluptates.
+                        Además, Elvis se graduó con honores y recibió reconocimiento
+                        por su destacado desempeño académico en su título universitario.
+                        Esta distinción refleja su dedicación y excelencia en sus estudios.
 
                     </p>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime nemo repellat praesentium,
-                        architecto nisi assumenda vero et. Quis enim ratione, a, voluptas aliquam consectetur itaque,
-                        ipsa quaerat nostrum et id.
-                    </p>
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint quasi maxime sunt expedita
-                        laboriosam fugit totam iusto, quidem, accusamus porro eos delectus consequuntur obcaecati alias
-                        natus facere hic, odio minima?
-                    </p>
+                    <p>Actualmente, Elvis Pachacama Cabezas es docente en el Instituto Superior Tecnológico Quito,
+                        donde imparte cátedra en la Carrera de Desarrollo de Software.
+                        Su posición como educador indica una dedicación al campo de la enseñanza
+                        y sugiere que posee conocimientos prácticos en el desarrollo de software,
+                        que comparte con los estudiantes.</p>
+                    <p>Adicionalmente, es relevante mencionar que Elvis
+                        está próximo a cursar la maestría en inteligencia artificial
+                        en la Universidad Internacional de Valencia.
+                        Este detalle indica su interés en profundizar sus conocimientos
+                        en un campo avanzado y en constante evolución, como es la
+                        inteligencia artificial.</p>
+
                 </div>
+
             </div>
             <div class="row about-me__buttons">
                 <div class="column large-half tab-full">
                     <a href="#" class="btn btn--stroke full-width">Hire Me</a>
                 </div>
-                <div class="column large-half ta-full">
-                    <a href="#" class="btn btn--stroke full width"> Download CV</a>
+                <div class="column large-half tab-full">
+                    <a href="#" class="btn btn--primary full-width">Dowload CV</a>
                 </div>
             </div>
-        </div> <!--End About-->
+        </div><!--End about me -->
 
-        <!-- Experience  -->
         <div class="about-experience">
             <div class="row heading-block">
                 <div class="column large-full">
                     <h2 class="section-heading">Work & Education</h2>
                 </div>
             </div>
+
             <div class="row about-experience__timeline">
                 <div class="column large-half tab-full">
                     <div class="timeline">
                         <div class="timeline_icon-wrap">
-                            <span class="timeline_icon timeline_icon-work"></span>
+                            <span class="timeline_icon timeline_icon--work"></span>
                         </div>
-                        <div class="timeline_block"></div>
+                        <div class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <p class="timeline__timeframe">May 2020 - Present</p>
+                                <h3 class="item-title">Instituto Tecnológico Quito</h3>
+                                <h5>Teacher</h5>
+                            </div>
+                            <div class="timeline__desc">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quaerat nemo non
+                                    laudantium optio
+                                    corrupti nulla, tenetur placeat dolores inventore explicabo veniam ratione iure sit.
+                                    Consectetur, quae quasi! Veniam, earum.</p>
+                            </div>
+                        </div>
+                        <div class="timeline__block">
+                            <div class="timeline__bullet">
+                                <div class="timeline__header">
+                                    <p class="timeline__timeframe">July 2017 - May 2020</p>
+                                    <h3 class="item-title">MB3</h3>
+                                    <h5>Frontend Developer</h5>
+                                </div>
+                                <div class="timeline__desc">
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus repellendus
+                                        suscipit alias
+                                        debitis ipsum velit quidem! Quod, delectus necessitatibus. Excepturi sit facilis
+                                        provident
+                                        consequuntur, eos laudantium in sed nemo voluptate.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <p class="timeline__timeframe">March 2016 - June 2017</p>
+                                <h3 class="item-title">Epic Design Studio</h3>
+                                <h5>Frontend Developer</h5>
+                            </div>
+                            <div class="timeline__desc">
+                                <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi
+                                    cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident
+                                    cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est
+                                    occaecat nisi.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
 
+                <div class="column large-half tab-full">
+                    <div class="timeline">
+                        <div class="timeline__icon-wrap">
+                            <span class="timeline__icon timeline_icon--education"></span>
+                        </div>
+                        <div class="timeline__block"> </div>
+                        <div class="timeline__bullet">
+                            <div class="timeline__header">
+                                <p class="timeline__timeframe">April 2025 - April 2026 </p>
+                                <h3 class="item-title">
+                                    Valencia International University
+                                </h3>
+                                <h5>Master Degree</h5>
+                            </div>
+                            <div class="timeline__desc">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus odit, quidem
+                                    asperiores, quasi officiis nihil
+                                    consequatur recusandae ex veniam ratione temporibus quam commodi error! Tenetur et
+                                    quam ab delectus magni.</p>
+                            </div>
+                        </div>
+                        <div class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline_header">
+                                <p class="timeline__timeframe">November 2012 - May 2017</p>
+                                <h3 class="item-title">Sumy State University</h3>
+                                <h5>Bachelor Degree</h5>
+                            </div>
+                            <div class="timeline__desc">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente minus alias ea
+                                    fuga? Voluptatem veniam cupiditate,
+                                    blanditiis soluta, amet aspernatur excepturi beatae, fugiat deserunt illo harum
+                                    animi debitis quam. Voluptatem.</p>
+                            </div>
+                        </div>
+
+                        <di class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline_header">
+                                <p class="timeline__header">September 2017 - June 2024</p>
+                                <h3 class="item-title">Unidad Educativa José María Velaz</h3>
+                                <h5>High School</h5>
+                            </div>
+                            <div class="timeline__desc">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, laboriosam. Soluta,
+                                    fugiat dolorum ex alias beatae odio
+                                    quis ducimus aspernatur perspiciatis accusamus blanditiis reprehenderit suscipit
+                                    aperiam sapiente cumque vel quibusdam?</p>
+                            </div>
+                        </di>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div><!--end about experience-->
+
+    </section><!-- end s-about-->
+
+    <!--Services
+    ========================================================================================================    -->
+    <section id="services" class="s-services ss-dark target-section">
+        <div class="shadow-overlay"></div>
+        <div class="row heading-block heading*block--center">
+            <div class="column large-full">
+                <h2 class="section-heading section-heading--centerbottom">Capabilities/ Habilidades</h2>
+                <p class="section-desc">
+                    My passion and goal is to help you make your business standout.
+                </p>
+            </div>
+        </div><!--end heading-block-->
+        <div class="row services-list block-large-1-3 block-medium-1-2 block-tab-full">
+            <div class="column item-service">
+                <div class="item-service__content">
+                    <h4 class="item-title">Web development</h4>
+                    <p>
+                        Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et
+                        a delectus. Vel sequi vitae voluptatem perspiciatis eligendi. Voluptatibus optio natus
+                        asperiores est commodi amet quia architecto. Dolores necessitatibus et.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="column item-service">
+                <div class="item-services__content">
+                    <h4 class="item-title">Mobile Development</h4>
+
+                    <p>
+                        Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et
+                        a delectus. Vel sequi vitae voluptatem perspiciatis eligendi. Voluptatibus optio natus
+                        asperiores est commodi amet quia architecto. Dolores necessitatibus et.
+                    </p>
+                </div>
+            </div>
+
+            <div class="column item-service" data-aos="fade-up">
+                <div class="item-service__content">
+                    <h4 class="item-title">desktop applications</h4>
+                    <p>
+                        Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et
+                        a delectus. Vel sequi vitae voluptatem perspiciatis eligendi. Voluptatibus optio natus
+                        asperiores est commodi amet quia architecto. Dolores necessitatibus et.
+                    </p>
+                </div>
+            </div>
+            <div class="column item-service" data-aos="fade-up">
+                <div class="item-service__content">
+                    <h4 class="item-title">computer security</h4>
+                    <p>
+                        Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et
+                        a delectus. Vel sequi vitae voluptatem perspiciatis eligendi. Voluptatibus optio natus
+                        asperiores est commodi amet quia architecto. Dolores necessitatibus et.
+                    </p>
+                </div>
+            </div>
+
+            <div class="column item-service" data-aos="fade-up">
+                <div class="item-service__content">
+                    <h4 class="item-title">UI/UX Design</h4>
+                    <p>
+                        Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et
+                        a delectus. Vel sequi vitae voluptatem perspiciatis eligendi. Voluptatibus optio natus
+                        asperiores est commodi amet quia architecto. Dolores necessitatibus et.
+                    </p>
+                </div>
+            </div>
+
+            <div class="column item-service" data-aos="fade-up">
+                <div class="item-service__content">
+                    <h4 class="item-title">Artificial intelligence</h4>
+                    <p>
+                        Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et
+                        a delectus. Vel sequi vitae voluptatem perspiciatis eligendi. Voluptatibus optio natus
+                        asperiores est commodi amet quia architecto. Dolores necessitatibus et.
+                    </p>
+                </div>
+            </div><!-- end services-list-->
+        </div><!--en s-services-->
 
     </section>
+
+
+
 </body>
 
 </html>
