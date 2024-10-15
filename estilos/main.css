@@ -115,7 +115,7 @@ h6,
     top: 0;
     left: 0;
 }
-
+/* estilos al logo */
 .header-logo {
     display: inline-block;
     margin: 6px 0 0 0;
@@ -159,7 +159,7 @@ h6,
     display: block;
     line-height: calc(78px -(18px*2));
 }
-
+   /* Estilos específicos para el menú principal de navegación */
 .header-main-nav {
 font-family: 'Roboto', sans-serif;
 font-size: 13px;
@@ -175,6 +175,7 @@ position: static;
     margin: 0 2rem;
 
 }
+ /* Estilos para los enlaces del menú principal */
 .header-main-nav a {
     color: rgba(225, 225, 225, 0.5);
     position: relative;
@@ -189,6 +190,7 @@ position: static;
 .header-main-nav .current a {
     color: #fff;
 }
+  /* Estilos para los íconos de redes sociales en el header */
 .header-social {
     font-size: 2rem;
     margin: 0;
@@ -206,7 +208,14 @@ position: static;
 .header-social li a {
     color: rgba(225, 225, 225, 0.5);
 }
+/* color para los iconos de redes sociales */
 
 .header-social li a i{
     color: rgba(225, 225, 225, 0.5)
+}
+/* al pasar el curso sobre los iconos de redes sociales se tornarán blanco */
+.header-social li a i:hover, 
+.header-social li a i :focus,
+.header-social li a i:active {
+color: #fff;
 }
