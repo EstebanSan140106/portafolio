@@ -159,3 +159,54 @@ h6,
     display: block;
     line-height: calc(78px -(18px*2));
 }
+
+.header-main-nav {
+font-family: 'Roboto', sans-serif;
+font-size: 13px;
+text-transform: uppercase;
+letter-spacing: 0.3rem;
+color: rgba(225, 225, 225, 0.5);
+margin: 0 0 0 4px;
+z-index: 2;
+position: static;
+}
+
+.header-main-nav li {
+    margin: 0 2rem;
+
+}
+.header-main-nav a {
+    color: rgba(225, 225, 225, 0.5);
+    position: relative;
+
+}
+.header-main-nav a:hover,
+.header-nav-wrap a:focus,
+.header-main-nav a:active {
+    color: #ffffff
+}
+
+.header-main-nav .current a {
+    color: #fff;
+}
+.header-social {
+    font-size: 2rem;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: 40px;
+
+}
+.header-social li {
+    margin-right: 1rem;
+}
+.header-social li:last-child {
+    margin-right: 0;
+}
+.header-social li a {
+    color: rgba(225, 225, 225, 0.5);
+}
+
+.header-social li a i{
+    color: rgba(225, 225, 225, 0.5)
+}
